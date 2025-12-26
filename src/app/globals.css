@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #1dddff;
+
+  /* Light (Landing) */
+  --bg: #f6fbff;
+  --panel: rgba(255, 255, 255, 0.78);
+  --border: rgba(29, 221, 255, 0.25);
+  --text: #071018;
+  --muted: rgba(7, 16, 24, 0.65);
+
+  /* Dark (App) */
+  --bg-dark: #070a0f;
+  --panel-dark: rgba(255, 255, 255, 0.05);
+  --border-dark: rgba(255, 255, 255, 0.12);
+  --text-dark: #ffffff;
+  --muted-dark: rgba(255, 255, 255, 0.6);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.glass {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.glow {
+  box-shadow: 0 0 26px rgba(29, 221, 255, 0.18);
+}
+
+.theme-light {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.theme-dark {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
