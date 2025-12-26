@@ -1,0 +1,18 @@
+name: Feature request
+description: Suggest a feature for vivy-fluorite-app
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What do you want?
+      description: Describe the feature and why it matters.
+    validations:
+      required: true
+
+  - type: textarea
+    id: story
+    attributes:
+      label: Story alignment (optional)
+      description: How does this relate to Vivy’s mission/progression?
